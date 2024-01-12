@@ -18,7 +18,6 @@ btn.addEventListener("click",function(){
     outputSection.style.display="flex"
     let output=document.querySelector(".output")
     output.innerHTML=`your age is: ${yeardiff} year ${monthdiff}month and ${datediff}days`
-    console.log(`your age  is ${yeardiff} year ${monthdiff} month and ${datediff} days`)
 }
 else{
     let outputSection=document.querySelector(".output-section")
@@ -31,7 +30,3 @@ function isValidDate(dateStr) {
     const dateObj = new Date(dateStr);
     return !isNaN(dateObj.getTime());
 }
-date.addEventListener("click",function(){
-    let outputSection=document.querySelector(".output-section")
-    outputSection.style.opacity="0"
-})
